@@ -135,6 +135,7 @@ export default defineComponent({
                     if(response != null) {
                         let token = JSON.parse(localStorage.getItem('user')!);
                         console.log(token.roles[0].authority);
+                        alert("Please Submit The Report Before the DeadLine");
                         this.$router.push("/");
                     } else {
                         alert("invalid credentials");
